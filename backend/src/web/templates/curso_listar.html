@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<h1>Lista de Cursos</h1>
+<ol>
+    {% for curso in lista_cursos %}
+    <li>{{curso.nome}} - {{curso.preco}}</li>
+    {% endfor %}
+</ol>
+
+</body>
+</html>
