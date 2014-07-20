@@ -5,7 +5,7 @@ from google.appengine.ext import ndb
 
 
 class Curso(ndb.Model):
-    nome = ndb.StringProperty()
+    nome = ndb.StringProperty(required=True)
     preco = ndb.FloatProperty()
 
 def salvar(nome,preco):
