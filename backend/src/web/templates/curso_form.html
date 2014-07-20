@@ -1,14 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
-<form action="{{ salvar_curso }}" method="post">
-    Nome:<input type="text" name="nome" /><br/>
-    Preço:<input type="text" name="preco" /><br/>
-    <input type="submit" value="Salvar" />
-</form>
+{% extends 'templates/curso_base.html' %}
 
-</body>
-</html>
+
+{% block conteudo %}
+<div class="row clearfix">
+		<div class="col-md-12 column">
+            <form action="{{ salvar_curso }}" method="post">
+                Nome:<input type="text" name="nome" /><br/>
+                Preço:<input type="text" name="preco" /><br/>
+                <input type="submit" value="Salvar" />
+            </form>
+
+        </div>
+</div>
+{% endblock %}
+
+

@@ -1,15 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
-<h1>Lista de Cursos</h1>
-<ol>
-    {% for curso in lista_cursos %}
-    <li>{{curso.nome}} - {{curso.preco}}</li>
-    {% endfor %}
-</ol>
+{% extends 'templates/curso_base.html' %}
 
-</body>
-</html>
+
+{% block conteudo %}
+<div class="row clearfix">
+		<div class="col-md-12 column">
+            <h1>Lista de Cursos</h1>
+            <ol>
+                {% for curso in lista_cursos %}
+                    <li>{{curso.nome}} - {{curso.preco}}</li>
+                {% endfor %}
+            </ol>
+        </div>
+</div>
+{% endblock %}
